@@ -605,7 +605,7 @@ section {
 
 .project-photo {
   position: relative;
-  min-height: 230px;
+  height: 230px;
   overflow: hidden;
   border-right: 1px solid var(--ligne);
   background-color: rgba(127, 178, 255, 0.08);
@@ -939,7 +939,7 @@ footer {
   }
 
   .project-photo {
-    min-height: 200px;
+    height: 200px;
     border-right: 0;
     border-bottom: 1px solid var(--ligne);
   }
