@@ -61,7 +61,7 @@
           <div class="photo-frame">
             <span class="photo-initials" aria-hidden="true">BZ</span>
             <!-- Ta photo : place ton fichier dans le dossier images/ sous le nom photo.png -->
-            <img src="images/photo.png" alt="Portrait de Baya Zerrouki" onerror="this.remove()">
+            <img src="images/photo.jpg" alt="Portrait de Baya Zerrouki" onerror="this.remove()">
           </div>
           <figcaption>FIG. 01 — Baya Zerrouki</figcaption>
         </figure>
@@ -282,11 +282,11 @@
       </div>
     </section>
 
-    <!-- ============ 5. PROJETS PROFESSIONNELS ============ -->
+    <!-- ============ 5. PROJETS ============ -->
     <section id="projets">
       <div class="container">
-        <p class="eyebrow">Projets professionnels</p>
-        <h2 class="section-title">Projets professionnels</h2>
+        <p class="eyebrow">Projets</p>
+        <h2 class="section-title">Projets</h2>
 
         <ol class="project-timeline">
           <li class="project-event">
@@ -296,27 +296,39 @@
                 <figcaption>Ajoute une photo du stabilisateur dans <code>images/stabilisateur.png</code>.</figcaption>
               </figure>
               <div class="project-content">
-                <p class="project-date">Projet réalisé · date à préciser</p>
+                <p class="project-date">Septembre 2025 — Mai 2026</p>
                 <h3>Stabilisateur vidéo mécanique à 2 axes</h3>
-                <p>Un stabilisateur vidéo mécanique à deux axes, piloté par une carte Arduino.</p>
+                <p>Conception et réalisation de A à Z d'un stabilisateur vidéo asservi, piloté par Arduino.</p>
                 <ul class="tags tags-small">
-                  <li>Arduino</li>
-                  <li>Électronique</li>
-                  <li>Mécanique</li>
+                  <li>Arduino / C</li>
+                  <li>Python</li>
+                  <li>Automatique (Asservissement)</li>
+                  <li>Modélisation 3D</li>
                 </ul>
                 <details class="project-details">
                   <summary>Voir la fiche complète</summary>
                   <dl>
                     <dt>Contexte et durée</dt>
-                    <dd>[Cadre du projet, dates et durée.]</dd>
+                    <dd>Projet réalisé dans le cadre de mon TIPE en classe préparatoire (filière PCSI/PSI), de septembre 2025 à mai 2026.</dd>
+                    
                     <dt>Objectif</dt>
-                    <dd>[Besoin auquel répond le stabilisateur et résultat attendu.]</dd>
+                    <dd>Concevoir un système embarqué capable de compenser les mouvements de l'utilisateur pour stabiliser une caméra sur deux axes, en appliquant la théorie des systèmes asservis à un cas pratique.</dd>
+                    
                     <dt>Étapes du projet</dt>
-                    <dd>[Étude du besoin et conception, réalisation mécanique, montage électronique, programmation Arduino, essais et améliorations.]</dd>
+                    <dd>
+                      <ul>
+                        <li><strong>Recherche et dimensionnement :</strong> Étude théorique des systèmes asservis et sélection des composants (Arduino, servomoteurs, capteur MPU6050 combinant accéléromètre et gyroscope, convertisseur Buck).</li>
+                        <li><strong>Conception mécanique :</strong> Modélisation 3D sur Onshape (équerre et tige) en assurant la parfaite concourance des axes.</li>
+                        <li><strong>Montage électronique :</strong> Assemblage et câblage optimisés (réduction du nombre et de la longueur des fils) pour minimiser l'inertie des câbles sur la structure.</li>
+                        <li><strong>Programmation et contrôle :</strong> Développement du code en C (Arduino) pour l'asservissement, et création de scripts Python pour le tracé des courbes de réponse et l'ajustement des gains.</li>
+                      </ul>
+                    </dd>
+                    
                     <dt>Ma contribution</dt>
-                    <dd>[Les tâches que tu as réalisées et les choix auxquels tu as contribué.]</dd>
+                    <dd>J'ai mené l'intégralité de ce projet en autonomie : de la recherche bibliographique initiale à la modélisation 3D, jusqu'au montage électronique et l'écriture des algorithmes de contrôle.</dd>
+                    
                     <dt>Résultat et bilan</dt>
-                    <dd>[Résultat obtenu, difficultés rencontrées et compétences acquises.]</dd>
+                    <dd>Le prototype final est fonctionnel. Lors des essais, j'ai identifié un problème de tremblements lié à l'asservissement en position, que j'ai réussi à corriger en implémentant un asservissement en vitesse. Ce projet m'a permis de consolider mes compétences en électronique, en programmation (C/Python) et de confronter la théorie de l'automatique aux contraintes du monde réel.</dd>
                   </dl>
                 </details>
               </div>
@@ -325,30 +337,39 @@
           <li class="project-event">
             <article class="project-card">
               <figure class="project-photo is-empty">
-                <img src="images/snake.jpg" alt="Capture du jeu Snake développé dans le terminal" onerror="this.remove()" onload="this.parentElement.classList.remove('is-empty')">
-                <figcaption>Ajoute une capture du jeu dans <code>images/snake.jpg</code>.</figcaption>
+                <img src="images/snake.png" alt="Capture du jeu Snake développé dans le terminal" onerror="this.remove()" onload="this.parentElement.classList.remove('is-empty')">
+                <figcaption>Ajoute une capture du jeu dans <code>images/snake.png</code>.</figcaption>
               </figure>
               <div class="project-content">
-                <p class="project-date">En cours</p>
+                <p class="project-date">Octobre 2026 — Novembre 2026</p>
                 <h3>Jeu Snake dans le terminal</h3>
-                <p>Un jeu Snake jouable directement dans le terminal, développé en langage C.</p>
+                <p>Développement en binôme du célèbre jeu Snake, entièrement jouable dans le terminal en langage C.</p>
                 <ul class="tags tags-small">
                   <li>C</li>
                   <li>Terminal</li>
+                  <li>Algorithmique</li>
                 </ul>
                 <details class="project-details">
                   <summary>Voir la fiche complète</summary>
                   <dl>
-                    <dt>Contexte et avancement</dt>
-                    <dd>[Cadre du projet, date de début et état d'avancement.]</dd>
+                    <dt>Contexte</dt>
+                    <dd>Projet éducatif réalisé en binôme dans le cadre de mon parcours d'élève-ingénieur à l'ENSEEIHT, entre octobre et novembre 2026.</dd>
+                    
                     <dt>Objectif et règles du jeu</dt>
-                    <dd>[Fonctionnement attendu, commandes et règles principales.]</dd>
+                    <dd>Recréer les mécaniques classiques du jeu Snake dans un environnement console : diriger un serpent pour manger des pommes générées aléatoirement, accumuler des points et gérer la croissance du serpent à chaque pomme mangée.</dd>
+                    
                     <dt>Étapes du projet</dt>
-                    <dd>[Conception des structures et de la boucle de jeu, affichage dans le terminal, gestion des commandes, déplacements et collisions.]</dd>
-                    <dt>Tests et difficultés</dt>
-                    <dd>[Tests réalisés, problèmes rencontrés et solutions apportées.]</dd>
-                    <dt>Prochaines étapes et bilan</dt>
-                    <dd>[Fonctionnalités à terminer ou améliorer et compétences acquises.]</dd>
+                    <dd>
+                      <ul>
+                        <li><strong>Conception :</strong> Utilisation de la méthode de raffinage pour décomposer le problème de manière claire et structurer l'architecture du code avant le développement.</li>
+                        <li><strong>Interface :</strong> Programmation des différents menus, des options de partie et de l'arène de jeu (le stade).</li>
+                        <li><strong>Logique du joueur :</strong> Modélisation du serpent et implémentation de son système de mouvement continu.</li>
+                        <li><strong>Mécaniques :</strong> Création de l'algorithme de génération aléatoire des pommes et du système de comptage des points.</li>
+                      </ul>
+                    </dd>
+                    
+                    <dt>Bilan et compétences</dt>
+                    <dd>Ce projet m'a permis de mettre en pratique les bases de l'algorithmique et du langage C. Le travail en binôme et la phase préalable de raffinage ont été essentiels pour répartir efficacement les tâches et aboutir à un code clair et fonctionnel.</dd>
                   </dl>
                 </details>
               </div>
@@ -389,23 +410,58 @@
     <!-- ============ 7. DÉVELOPPEMENT DURABLE ET ENGAGEMENT CITOYEN ============ -->
     <section id="engagement">
       <div class="container">
-        <p class="eyebrow">Développement durable et engagement citoyen</p>
+        <p class="eyebrow">Engagement citoyen</p>
         <h2 class="section-title">Engagement citoyen</h2>
 
-        <ol class="timeline engagement-timeline">
-          <li>
-            <details class="engagement-item">
-              <summary><span class="date">Depuis 2026</span><span class="engagement-title">N7 Consulting · Junior-Entreprise</span></summary>
-              <p>Participation à la Junior-Entreprise de l'ENSEEIHT. Rôle et missions à préciser.</p>
-            </details>
-          </li>
-          <li>
-            <details class="engagement-item">
-              <summary><span class="date">Depuis 2026</span><span class="engagement-title">Drawin7 · Club de dessin</span></summary>
-              <p>Participation au club de dessin de l'ENSEEIHT. Activités et rôle à préciser.</p>
-            </details>
-          </li>
-        </ol>
+        <div class="engagement-list">
+          <article class="engagement-row">
+            <figure class="engagement-visual is-empty">
+              <img src="images/cleanwalk.png" alt="Participation à la Clean Walk" onerror="this.remove()" onload="this.parentElement.classList.remove('is-empty')">
+              <figcaption>Photo à ajouter<code>images/cleanwalk.png</code></figcaption>
+            </figure>
+            <div class="engagement-copy">
+              <p class="engagement-number">01 · Environnement</p>
+              <h3>Clean Walk</h3>
+              <p>Organisée par le Bureau de Développement Durable, cette marche m'a permis de participer à la dépollution des rues toulousaines. J'ai été particulièrement surprise par la quantité de mégots ramassés, ce qui m'a fait réaliser l'ampleur de cette pollution . Au-delà de l'action écologique, cette journée a été marquée par un beau moment de solidarité : j'ai pu accompagner spontanément une dame âgée jusqu'à son ophtalmologue, rendant cette expérience d'entraide d'autant plus gratifiante.</p>
+            </div>
+          </article>
+
+          <article class="engagement-row">
+            <figure class="engagement-visual is-empty">
+              <img src="images/proces.jpg" alt="Pièce de théâtre King Kong" onerror="this.remove()" onload="this.parentElement.classList.remove('is-empty')">
+              <figcaption>Photo à ajouter<code>images/proces.jpg</code></figcaption>
+            </figure>
+            <div class="engagement-copy">
+              <p class="engagement-number">02 · Culture</p>
+              <h3>Pièce de théâtre « King Kong »</h3>
+              <p>J'ai assisté à cette pièce de théâtre de sensibilisation aux Violences et Harcèlements Sexistes et Sexuels (HVSS). J'ai beaucoup apprécié la justesse et l'intelligence avec lesquelles ce sujet complexe a été traité. Le format interactif de la pièce, qui implique directement le public, m'a particulièrement plu et donne encore plus de force au message transmis</p>
+            </div>
+          </article>
+
+          <article class="engagement-row">
+            <figure class="engagement-visual is-empty">
+              <img src="images/fresque.png" alt="Participation à la Fresque du Climat" onerror="this.remove()" onload="this.parentElement.classList.remove('is-empty')">
+              <figcaption>Photo à ajouter<code>images/fresque.png</code></figcaption>
+            </figure>
+            <div class="engagement-copy">
+              <p class="engagement-number">03 · Sensibilisation</p>
+              <h3>La Fresque du Climat</h3>
+              <p>J'ai participé à cet atelier collaboratif de trois heures visant à comprendre les liens de cause à effet du dérèglement climatique. En groupe, nous avons mené une réflexion poussée sur les conséquences environnementales et les limites planétaires. Nous nous sommes notamment questionnés sur les seuils critiques du réchauffement, comme celui de l'acidification des océans et sa potentielle irréversibilité. Une expérience percutante pour mieux appréhender l'urgence climatique.</p>
+            </div>
+          </article>
+
+          <article class="engagement-row">
+            <figure class="engagement-visual is-empty">
+              <img src="images/futurproches.png" alt="Participation au festival Futur Proche" onerror="this.remove()" onload="this.parentElement.classList.remove('is-empty')">
+              <figcaption>Photo à ajouter<code>images/futurproches.png</code></figcaption>
+            </figure>
+            <div class="engagement-copy">
+              <p class="engagement-number">04 · Transition écologique et sociale</p>
+              <h3>Festival Futur Proche</h3>
+              <p>Lors de ce festival tourné vers l'avenir, j'ai eu l'opportunité de participer à deux ateliers très enrichissants. Le premier m'a permis de réfléchir à la déconstruction des stéréotypes de genre. Le second proposait de repenser notre vision du sport : plutôt que de le voir uniquement sous le prisme de la performance et de la compétition, nous l'avons abordé comme un formidable outil de coopération, de création de lien social et de bien-être.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
