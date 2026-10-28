@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="E-portfolio de Baya Zerrouki, élève en école d'ingénieurs à l'ENSEEIHT (Énergie électrique, électronique et automatique).">
-  <title>Baya Zerrouki – E-portfolio</title>
+  <meta name="description" content="Baya Zerrouki's portfolio, an engineering student at ENSEEIHT specialising in electrical engineering, electronics and automation.">
+  <title>Baya Zerrouki – Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,19 +12,28 @@
 
   <!-- ============ NAVIGATION ============ -->
   <header class="site-header">
-    <nav class="nav" aria-label="Navigation principale">
+    <nav class="nav" aria-label="Primary navigation">
       <a class="logo" href="#accueil">Baya Zerrouki</a>
       <ul class="nav-links">
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#parcours">Parcours</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#mobilite">Mobilités</a></li>
-        <li><a href="#engagement">Engagement</a></li>
-        <li><a href="#pitch">Pitch</a></li>
+        <li><a href="#accueil">Welcome</a></li>
+        <li><a href="#parcours">Engineering course</a></li>
+        <li><a href="#mobilite">International Mobility</a></li>
+        <li><a href="#engagement">Sustainability &amp; Civic Engagement</a></li>
+        <li><a href="#interets">Sport &amp; other activities</a></li>
+        <li><a href="#projets">Career Development</a></li>
+        <li class="nav-more">
+          <details>
+            <summary>More</summary>
+            <ul class="nav-more-links">
+              <li><a href="#apropos">About</a></li>
+              <li><a href="#competences">Skills</a></li>
+              <li><a href="#pitch">Pitch</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </details>
+        </li>
       </ul>
-      <button class="language-toggle" type="button" aria-label="Switch to English" aria-pressed="false">EN</button>
+      <button class="language-toggle" type="button" aria-label="Switch to French" aria-pressed="true">FR</button>
     </nav>
   </header>
 
@@ -53,7 +62,7 @@
             <a href="#projets" class="btn btn-primary">Voir mes projets</a>
             <a href="cv-fr.pdf" class="btn btn-secondary" download>Télécharger mon CV en français</a>
             <a href="cv-en.pdf" class="btn btn-secondary" download>Télécharger mon CV en anglais</a>
-            <a href="https://www.linkedin.com/in/ton-profil" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/baya-z-2b105243a/" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
 
@@ -279,6 +288,18 @@
           </li>
         </ol>
 
+        <h3 class="subsection-title">Expérience professionnelle</h3>
+        <ol class="timeline">
+          <li>
+            <span class="date">Janvier 2021</span>
+            <h4>Stage d’observation de 3e – Pharmacie</h4>
+            <ul class="facts">
+              <li>Gestion informatisée des stocks : réapprovisionnement et traçabilité.</li>
+              <li>Rédaction d’un rapport de stage sur mon ressenti, mes apprentissages et mes questionnements.</li>
+            </ul>
+          </li>
+        </ol>
+
       </div>
     </section>
 
@@ -382,26 +403,64 @@
     <!-- ============ 6. MOBILITÉ INTERNATIONALE ============ -->
     <section id="mobilite">
       <div class="container">
-        <p class="eyebrow">Mobilités internationales</p>
-        <h2 class="section-title">Mobilités internationales</h2>
+        <p class="eyebrow">Mobilités envisagées</p>
+        <h2 class="section-title">Mobilités envisagées</h2>
+        <p class="mobility-intro">J'ai vraiment à cœur de donner une dimension internationale à mes études. Voici les pistes qui me font le plus envie</p>
 
-        <div class="panels">
-          <div class="panel">
-            <h3>Mon projet de mobilité</h3>
-            <p>[Expérience internationale réalisée, en cours ou envisagée : semestre d'études, stage, projet…]</p>
-            <ul class="facts">
-              <li><strong>Destination :</strong> [Pays, établissement ou entreprise]</li>
-              <li><strong>Période :</strong> [Dates]</li>
-              <li><strong>Type :</strong> [Études / stage / autre]</li>
-            </ul>
+        <div class="mobility-tabs" role="tablist" aria-label="Destinations de mobilité envisagées">
+          <button class="mobility-tab" id="tab-georgia" type="button" role="tab" aria-selected="true" aria-controls="panel-georgia" tabindex="0">Georgia Tech</button>
+          <button class="mobility-tab" id="tab-dcu" type="button" role="tab" aria-selected="false" aria-controls="panel-dcu" tabindex="-1">Dublin City University</button>
+          <button class="mobility-tab" id="tab-imperial" type="button" role="tab" aria-selected="false" aria-controls="panel-imperial" tabindex="-1">Imperial College London</button>
+        </div>
+
+        <div class="mobility-panel panel" id="panel-georgia" role="tabpanel" aria-labelledby="tab-georgia" tabindex="0">
+          <p class="mobility-kicker">États-Unis · Atlanta</p>
+          <h3>Georgia Institute of Technology</h3>
+          <ul class="facts mobility-facts">
+            <li><strong>Projet :</strong> Double diplôme en ingénierie électrique et électronique</li>
+            <li><strong>Période :</strong> 3e année · semestre 9 ou 10</li>
+            <li><strong>Type :</strong> Études · Double diplôme </li>
+            <li><strong>Langues :</strong> Anglais B2 actuellement · bilinguisme visé</li>
+          </ul>
+          <div class="mobility-goals">
+            <h4>Objectifs</h4>
+            <p>Découvrir l'écosystème technologique américain et la vie dans un grand campus, m'ouvrir à une nouvelle culture, voyager en Amérique du Nord et viser un diplôme reconnu à l'international.</p>
+            <h4>Compétences visées</h4>
+            <p>Adaptabilité, autonomie et vision internationale de l'ingénierie.</p>
           </div>
-          <div class="panel">
-            <h3>Mes objectifs et mon bilan</h3>
-            <p>[Ce que tu attends de cette expérience, puis ce qu'elle t'a apporté.]</p>
-            <ul class="facts">
-              <li><strong>Langues :</strong> anglais B2, espagnol A2</li>
-              <li><strong>Compétences visées :</strong> [À compléter]</li>
-            </ul>
+        </div>
+
+        <div class="mobility-panel panel" id="panel-dcu" role="tabpanel" aria-labelledby="tab-dcu" tabindex="0" hidden>
+          <p class="mobility-kicker">Irlande · Dublin</p>
+          <h3>Dublin City University (DCU)</h3>
+          <ul class="facts mobility-facts">
+            <li><strong>Projet :</strong> Semestre d'échange Erasmus+ en électronique et automatisation</li>
+            <li><strong>Période :</strong> 3e année · semestre 9</li>
+            <li><strong>Type :</strong> Semestre d'études Erasmus+</li>
+            <li><strong>Langues :</strong> Anglais B2 actuellement · Anglais courant visé</li>
+          </ul>
+          <div class="mobility-goals">
+            <h4>Objectifs</h4>
+            <p>Étudier à Dublin, au cœur d'un environnement technologique international, découvrir une nouvelle culture universitaire et améliorer mon anglais grâce à une immersion dans un pays anglophone.</p>
+            <h4>Compétences visées</h4>
+            <p>Flexibilité, communication  et découverte des méthodes d'enseignement anglo-saxonnes.</p>
+          </div>
+        </div>
+
+        <div class="mobility-panel panel" id="panel-imperial" role="tabpanel" aria-labelledby="tab-imperial" tabindex="0" hidden>
+          <p class="mobility-kicker">Royaume-Uni · Londres</p>
+          <h3>Imperial College London</h3>
+          <ul class="facts mobility-facts">
+            <li><strong>Projet :</strong> Master en ingénierie</li>
+            <li><strong>Période :</strong> 3e année · semestre 9</li>
+            <li><strong>Type :</strong> Études ·  3e année à l'étranger</li>
+            <li><strong>Langues :</strong> anglais B2 actuellement · anglais académique et professionnel visé</li>
+          </ul>
+          <div class="mobility-goals">
+            <h4>Objectifs</h4>
+            <p>Évoluer dans un environnement d'excellence académique, me confronter à un haut niveau d'exigence et développer un réseau international dans le domaine de l'ingénierie.</p>
+            <h4>Compétences visées</h4>
+            <p>Expertise technique, esprit d'analyse approfondi et découverte de la culture britannique.</p>
           </div>
         </div>
       </div>
@@ -470,11 +529,33 @@
       <div class="container">
         <p class="eyebrow">En dehors des études</p>
         <h2 class="section-title">Centres d'intérêt</h2>
-        <ul class="tags interests-list">
-          <li>Sport</li>
-          <li>Lecture</li>
-          <li>Dessin</li>
-        </ul>
+        <div class="interests-grid">
+          <article class="interest-card">
+            <svg class="interest-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="16" cy="16" r="13"/>
+              <path d="m16 7 5 4-2 6h-6l-2-6 5-4Zm-5 4-5 2m18-2 5 2m-15 2-4 5m10-5 4 5m-13-1 1 7m8-7-1 7"/>
+            </svg>
+            <h3>Sport</h3>
+            <p>Pratique régulière de la course à pied, avec la préparation d’un cross de 4,5 km, et entraînements de renforcement musculaire au poids du corps. Appétence pour les sports d'équipe comme le volleyball et le football.</p>
+          </article>
+
+          <article class="interest-card">
+            <svg class="interest-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 6.5A3.5 3.5 0 0 1 8.5 3H27v23H8.5A3.5 3.5 0 0 0 5 29V6.5Zm0 0V29m5-20h12m-12 5h12m-12 5h8"/>
+            </svg>
+            <h3>Lecture</h3>
+            <p>Grand intérêt pour la lecture et pour le suivi de l’actualité mondiale à travers des documentaires et des reportages.</p>
+          </article>
+
+          <article class="interest-card">
+            <svg class="interest-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m22 4 6 6L12 26l-8 2 2-8L22 4Z"/>
+              <path d="m18 8 6 6M4 28h24"/>
+            </svg>
+            <h3>Dessin (Traditionnel &amp; Digital)</h3>
+            <p>Je dessine sur supports classiques et j'explore des techniques d’illustration sur tablette numérique.</p>
+          </article>
+        </div>
       </div>
     </section>
 
